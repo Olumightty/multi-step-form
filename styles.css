@@ -1,0 +1,709 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color:hsl(206, 94%, 87%, 30%);
+    font-family: 'Ubuntu', sans-serif;
+}
+#container{
+    width: fit-content;
+    height: 606px;
+    background-color: white;
+    margin: 40px auto;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 5px 5px 4px hsl(231, 11%, 63%);
+    
+
+}
+h2{
+    font-size: small;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: hsl(231, 11%, 63%);
+}
+
+nav{
+    width: 274px;
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    height: 568px;
+
+}
+
+main{
+  width: 600px;
+  margin: 100px;
+  margin-top: 30px;
+  height: 568px;
+  position: relative;
+}
+
+.nav-link{
+    margin-left: 30px;
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+}
+
+.nav-link:first-of-type{
+    margin-top: 30px;
+}
+
+.circle{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.nav-text{
+    font-size: medium;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-text span{
+    font-size: small;
+    color: hsl(229, 24%, 87%);
+    font-weight: normal;
+
+}
+
+header{
+    font-size: xx-large;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+}
+
+.hidden{
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    width: 1px !important;
+    position: absolute !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+label{
+    color: hsl(213, 96%, 18%);
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset input{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid hsl(231, 11%, 63%);
+    outline-color: hsl(231, 11%, 63%);
+    margin-bottom: 20px;
+
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+}
+
+.next{
+    position: absolute;
+    width: 100px;
+    left: 500px;
+    bottom: 50px;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.next:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.back{
+    position: absolute;
+    width: 100px;
+    bottom: 50px;
+    background-color: white;
+    border: 0;
+    color: hsl(231, 11%, 63%);
+    text-align: center;
+    box-sizing: content-box;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.back:hover{
+    color: hsl(213, 96%, 18%);
+    cursor: pointer;
+
+}
+
+#step2 form{
+    display: flex;
+    gap: 15px;
+}
+
+#step2 form img{
+    position: relative;
+    left: -40px;
+    top: -10px;
+    width: 60px;
+    
+}
+.options{
+    width: 190px;
+    border-radius: 10px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid hsl(231, 11%, 63%);
+    z-index: 1;
+}
+
+.options:hover{
+    border-color: hsl(213, 96%, 18%);
+}
+#step2 form p:first-of-type{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    text-align: left;
+}
+
+#step2 form p{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-weight: 700;
+    color: hsl(213, 96%, 18%);
+    text-align: left;
+}
+
+#step2 form span{
+    position: relative;
+    text-align: left;
+    left: -45px;
+    top: 20px;
+    font-weight: 700;
+    color: hsl(231, 11%, 63%);
+}
+.two{
+    margin-left: -10px;
+}
+
+.check{
+    display: flex;
+    gap: 40px;
+    border: 1px solid hsl(231, 11%, 63%);
+    border-radius: 10px;
+    height: 80px;
+    align-items: center;
+}
+
+.check:hover{
+    border-color: hsl(213, 96%, 18%);
+}
+
+.add-ons{
+    display: block;
+    color: hsl(231, 11%, 63%);
+}
+
+#larger, #custom, #online{
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -5px;
+    left: 15px;
+    
+}
+
+#step3 form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price{
+    position: absolute;
+    right: 20px;
+    color:hsl(243, 100%, 62%);
+}
+
+#back-to-two{
+    display: block;
+    color: hsl(231, 11%, 63%);
+    font-size: medium;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#table{
+    display: flex;
+    flex-direction: column;
+    width: 600px;;
+    border-radius: 10px;
+    
+
+}
+
+#table #plan, #monthly, .top{
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+    font-size: large;
+}
+.top{
+    font-size: large;
+    font-weight: 700;
+
+}
+#table p{
+    margin: 0;
+    color: hsl(231, 11%, 63%);
+    
+}
+
+
+
+#head{
+    padding: 20px 0;
+    background-color: hsl(229, 24%, 87%, 30%);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#head, #addon, #total{
+    display: flex;
+    padding-left: 30px;
+    
+}
+
+.amount{
+    position: absolute;
+    right: 30px;
+    color: hsl(213, 96%, 18%);
+}
+
+.final{
+    color: hsl(243, 100%, 62%);
+    font-size: larger;
+    font-weight: 700;
+}
+
+#total{
+    background-color: white;
+    padding-top: 20px;
+}
+
+#fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid hsl(231, 11%, 63%);
+    background-color: hsl(229, 24%, 87%, 30%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.thanks{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 468px;
+    gap: 20px;
+}
+
+.thanks p{
+    text-align: center;
+    line-height: 30px;
+    margin: 0;
+}
+
+img[src="./assets/images/icon-thank-you.svg"]{
+    width: 100px;
+}
+
+.error1{
+    position: absolute;
+    right: 30px;
+    top: 110px;
+    color: red;
+    font-size: small;
+}
+
+.error2{
+    position: absolute;
+    right: -50px;
+    top: 200px;
+    color: red;
+    width: 200px;
+    font-size: small;
+}
+.error3{
+    position: absolute;
+    right: -50px;
+    top: 290px;
+    color: red;
+    width: 200px;
+    font-size: small;
+}
+
+.click{
+    background-color: hsl(206, 94%, 87%);
+    border: 1px solid hsl(213, 96%, 18%);
+}
+
+.circle-active{
+    background-color: hsl(206, 94%, 87%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%)3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle-switch{
+    background-color: hsl(206, 94%, 87%, 50%);
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 30px;
+    color: hsl(231, 11%, 63%);
+    font-weight: 700;
+  }
+
+  .blue{
+    color: hsl(213, 96%, 18%);
+  }
+
+  @media (max-width: 500px){
+    #container{
+        width: 375px;
+        height: 606px;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding: 0;
+        background-color: hsl(206, 94%, 87%, 50%);
+    }
+    nav{
+        width: 375px;
+        height: 172px;
+        background-image: url("./assets/images/bg-sidebar-mobile.svg");
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        
+
+    }
+
+    html{
+        background-color: hsl(206, 94%, 87%, 50%);
+    }
+
+    main, section{
+        width: 300px;
+        height: 400px;
+        padding: 0;
+    
+        border-radius: 10px;
+        background-color: white;
+    }
+    main{
+        position: absolute;
+        left: 37.5px;
+        top: 100px;
+        margin: 0;
+    }
+    section{
+        box-sizing: border-box;
+        padding: 20px;
+        padding-top: 20px;
+        width: 330px;
+        padding-bottom: 10px;
+    }
+    .next{
+        position: relative;
+        left: 200px;
+        top: 120px;
+
+    }
+    .nav-link{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-link:first-of-type{
+        margin-top: 0;
+    }
+
+    .circle{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-text{
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        clip-path: inset(50%) !important;
+        height: 1px !important;
+        width: 1px !important;
+        position: absolute !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+        padding: 0 !important;
+        margin: -1px !important;
+    }
+
+    .attribution{
+        position: relative;
+        top: 70px;
+    
+    }
+
+    .error1{
+        position: absolute;
+        top: 150px;
+        font-size: 10px;
+        right: 20px;
+    }
+    .error2{
+        position: absolute;
+        top: 240px;
+        font-size: 10px;
+        right: -80px;
+    }
+    .error3{
+        position: absolute;
+        top: 330px;
+        font-size: 10px;
+        right: -80px;
+    }
+
+    #step2 form{
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+        height: fit-content;
+       
+    }
+
+    #step2 form img{
+        width: 40px;
+        position: a;
+        top: 10px;
+        left: -100px;
+    }
+
+    .options{
+        padding: 0%;
+        margin: 0;
+        width: 90%;
+        position: static;
+        height: 60px;
+
+    }
+    
+    #step2 form p:first-of-type{
+        position: relative;
+        left: 70px;
+        top: -30px;
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+        text-align: left;
+        font-size: small;
+    }
+    
+    #step2 form p{
+        position: relative;
+        left: 70px;
+        top: -30px;
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+        text-align: left;
+        margin: 0;
+        font-size: smaller;
+        
+    }
+
+    #step2 form span{
+        position: relative;
+        top: -30px;
+        left: -40px;
+    }
+
+    .toggle-switch{
+        margin: -30px auto;
+        width: 250px;
+        
+    }
+    .two{
+        position: relative;
+        left: 110px;
+        top: 200px;
+    }
+
+    .back{
+        position: absolute;
+        left: 0px;
+        top: 540px;
+        background-color: hsl(206, 94%, 87%, 0%);
+
+    }
+
+    #step3 form{
+        gap: 15px;
+    }
+
+    
+
+    .check{
+        gap: 20px;
+        height: 70px;
+        
+    }
+
+    .check label{
+        font-size: small;
+    }
+    .check input{
+        margin-left: 0px;
+    }
+    .price{
+        right: 2px;
+    }
+
+    #total, #table{
+        width: 290px;
+    }
+
+    .amount{
+        right: 10px;
+        font-size: medium;
+
+    }
+
+    #total{
+        padding-top: 10px;
+    }
+    
+    .three{
+        position: relative;
+        top: 160px;
+    }
+
+    .four{
+        position: absolute;
+        top: 346px;
+        left: 220px;
+        margin-top: 179px;
+        width: 100px;
+        height: 15px;
+    }
+
+    .thanks{
+        width: 250px;
+        padding: 0;
+        margin: 0 auto;
+        position: relative;
+        top: -30px;
+
+    }
+
+    .thanks img{
+        width: 70px;
+       
+    }
+    #step5{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+
+}
