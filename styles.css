@@ -380,6 +380,7 @@ img[src="./assets/images/icon-thank-you.svg"]{
 
 .circle-active{
     background-color: hsl(206, 94%, 87%);
+    color: black;
 }
 
 .switch {
