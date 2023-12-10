@@ -293,7 +293,7 @@ fieldset{
     border-top-left-radius: 10px;
 }
 
-#head, #addon, #total{
+#head, .td1, .td2, .td3, #total{
     display: flex;
     padding-left: 30px;
     
